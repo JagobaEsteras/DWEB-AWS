@@ -4,57 +4,57 @@
 Las instancias de uso general brindan una combinación equilibrada de recursos informáticos, de memoria y de red. Además, pueden usarse para distintas cargas de trabajo. Estas instancias son ideales para las aplicaciones que usan estos recursos en partes iguales, como los servidores web y los repositorios de código. 
 ## Instancia-1
 Primero lanzaremos una instacia  arruba a la dererha de la captura de la parte inferior esta visualizada.
-![Primer Paso](/img/Lanzar.png)
+![Primer Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/Lanzar.png)
 Eligiremos el Ubuntu Server 20.04 para nuestro server 
-![Segundo Paso](/img/TipoServer.png)
+![Segundo Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/TipoServer.png)
 En el tipo de instancia nos saldra los tipops que hay asique escogeremos el predeterminado
-![Tercer Paso](/img/TipoInstancia.png)
+![Tercer Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/TipoInstancia.png)
 En este paso cambiaremos el almacenamineto por 30 , que en la captura nos saldra seleccionado pero no esta cambiado
-![Cuarto Paso](/img/Storage.png)
+![Cuarto Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/Storage.png)
 Daremos siguiente en los tags no hay q tocar nada
-![Quinto Paso](/img/Addtags.png)
+![Quinto Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/Addtags.png)
 ponemos la 0.0.0.0 porque abarca todos los rangos de las ips
-![Sexto Paso](/img/ConfigureGroup.png)
+![Sexto Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/ConfigureGroup.png)
 Ahora instalaremos la clave que en este caso lo llamamos clave1.pem , lo guardaremos en un lugar que nos acordemos y clicamos en el boton azul que pone "Launch Instances"
-![Septimo Paso](/img/Clave.png)
+![Septimo Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/Clave.png)
 Clicamos en los numeros de la instacia 
-![Novemo Paso](/img/InstanciaCreada.png)
+![Novemo Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/InstanciaCreada.png)
 Nos abrira un apartado en el cual entramos al Cliente SSH
-![Octavo Paso](/img/ConectarseInstancia.png)
+![Octavo Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/ConectarseInstancia.png)
 Y ahora vamos al archivo del la clave  la seleccionamos y entramos en el Git Bash here
-![Noveno Paso](/img/ClaveGitbash.png)
+![Noveno Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/ClaveGitbash.png)
 Nos abrirala terminal y monemos los siguientes comando s para entrar la cual tambien los saldran el la captura donde entramos en el apartado cliente SSH
-![Decimo Paso](/img/EntramosConLaClave.png)
+![Decimo Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/EntramosConLaClave.png)
 
 ## Instalacion Apache
 Vamos a la consola y ponemos el siguiente comando
-![Primer Paso](/img/Apache1.png)
+![Primer Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/Apache1.png)
 Entramos en reglas de entrada  y añadimos un nuevo tipo que sera el http.
-![Segundo Paso](/img/Apache2.png)
+![Segundo Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/Apache2.png)
 Cuando este correcto todo en el navegador pondremos este comando la cual nos dira si esta abierto.
-![Tercer Paso](/img/Apache3.png)
+![Tercer Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/Apache3.png)
 Este sera el comando para ver el estado de nuestro apache
 este comando se recoge de desde la instancia boton dereche y Coneactar .
 "ssh -i "clave1.pem" ubuntu@ec2-34-229-192-78.compute-1.amazonaws.com "
-![Cuerto Paso](/img/Apache4.png)
+![Cuerto Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/Apache4.png)
 
 ## Instalacion MYSQL
 Instalamos el mysql-server 
-![Primer Paso](/img/mysql1.png)
+![Primer Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/mysql1.png)
 Esta captura es la de inicio de el mysql y la del status del mysql
-![Segundo Paso](/img/mysql2.png)
+![Segundo Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/mysql2.png)
 
 ## Instalacion PHP
 Instalamos el php 
-![Primer Paso](/img/php1.png)
+![Primer Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/php1.png)
 El status del php
-![Segundo Paso](/img/php2.png)
+![Segundo Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/php2.png)
 
 ## Instalacion FTP
 Instalamos el Ftp 
-![Primer Paso](/img/ftp1.png)
+![Primer Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/ftp1.png)
 El status del Ftp
-![Segundo Paso](/img/ftp2.png)
+![Segundo Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/ftp2.png)
 
 ## IP ELASTICA
 
@@ -63,17 +63,17 @@ Las direcciones IP elásticas son direcciones IPv4 estáticas diseñadas para la
 
 ## IP ELASTICA 1
  Entramos en el panel de EC2 y nos adentramos en el apartado "Direcciones Ip elasticas"
-![Primer Paso](/img/ipelastica1.png)
+![Primer Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/ipelastica1.png)
 Entramos en asignar direccion de IP elastica
-![Segundo Paso](/img/ipelastica2.png)
+![Segundo Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/ipelastica2.png)
 Asignamos la ip elastica
-![Tercer Paso](/img/ipelastica3.png)
+![Tercer Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/ipelastica3.png)
 Entramos en Asociar la direccion IP elastica que ser para enlazarlo con la instancia
-![Cuarto Paso](/img/ipelastica4.png)
+![Cuarto Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/ipelastica4.png)
 En instacias seleccionamos nuestra insatancia y le damos click al boton naranja de abajo para asociar la instacia a la ip elastica
-![Quinto Paso](/img/ipelastica5.png)
+![Quinto Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/ipelastica5.png)
 Esto es saldra si la ip elastica a sido bien enlazada
-![Sexto Paso](/img/ipelastica6.png)
+![Sexto Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/ipelastica6.png)
 
 ## DNS
 
@@ -103,7 +103,7 @@ ANY = Toda la información de todos los tipos que exista. (No es un tipo de regi
 ## Imagen del registro de nuestro servidor
 
 
-![Primer Paso](/img/dns.png)
+![Primer Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/dns.png)
 
 Todos tienen un TTL de 300 
 
@@ -119,13 +119,13 @@ TTL (time-to-live, tiempo de vida) es el tiempo durante el que un registro DNS p
 
 DNS que se encuentran a diferentes niveles, hay 13 servidores DNS mundiales que son los encargados de dar toda la información a los demás servidores.
 
-![Segundo Paso](/img/dns2.png)
+![Segundo Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/dns2.png)
 
 A partir del 17/12/2020 11:38 am, el sistema del servidor raíz consta de 1367 instancias operadas por los 12 operadores independientes del servidor raíz.
 
 https://root-servers.org/
 
-![Tercer Paso](/img/dns3.png)
+![Tercer Paso](https://raw.githubusercontent.com/JagobaEsteras/DWEB-AWS/main/2EBA-SIS/img/dns3.png)
 
 ##  Cuantas redirecciones DNS son posibles
  
